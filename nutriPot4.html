@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nutrient Profile Calculator | Complete Foods</title>
+    <meta name="apple-mobile-web-app-title" content="Complete Foods">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="https://d109b3yimhrymz.cloudfront.net/favicon.ico">
+    <link rel="canonical" href="https://www.completefoods.co/diy/nutrient-profiles/calculator">
+    <link href="https://d109b3yimhrymz.cloudfront.net/diy/app2-5001241e.css" rel="stylesheet">
+    <script src="https://d109b3yimhrymz.cloudfront.net/diy/app2-4bb3d901.js"></script>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+
+    <div class="container">
+        <h1 class="text-center">Nutrient Profile Calculator</h1>
+        <form method="POST" action="/diy/nutrient-profiles/customize" class="form-horizontal create-custom-profile">
+            <div class="form-group"><label class="control-label col-xs-3 col-sm-offset-2">Age</label>
+                <div class="col-xs-6 col-sm-3"><input type="number" name="age" placeholder="24" min="0" max="120"
+                        class="form-control calc"></div>
+            </div>
+            <div class="form-group"><label class="control-label col-xs-3 col-sm-offset-2">Height</label>
+                <div class="col-xs-6 col-sm-3"><select name="height" class="calc form-control">
+                        <option value="121.92">4' 0" / 122 cm</option>
+                        <option value="124.46">4' 1" / 124 cm</option>
+                        <option value="127">4' 2" / 127 cm</option>
+                        <option value="129.54">4' 3" / 130 cm</option>
+                        <option value="132.08">4' 4" / 132 cm</option>
+                        <option value="134.62">4' 5" / 135 cm</option>
+                        <option value="137.16">4' 6" / 137 cm</option>
+                        <option value="139.7">4' 7" / 140 cm</option>
+                        <option value="142.24">4' 8" / 142 cm</option>
+                        <option value="144.78">4' 9" / 145 cm</option>
+                        <option value="147.32">4' 10" / 147 cm</option>
+                        <option value="149.86">4' 11" / 150 cm</option>
+                        <option value="152.4">5' 0" / 152 cm</option>
+                        <option value="154.94">5' 1" / 155 cm</option>
+                        <option value="157.48">5' 2" / 157 cm</option>
+                        <option value="160.02">5' 3" / 160 cm</option>
+                        <option value="162.56">5' 4" / 163 cm</option>
+                        <option value="165.1">5' 5" / 165 cm</option>
+                        <option value="167.64">5' 6" / 168 cm</option>
+                        <option value="170.18">5' 7" / 170 cm</option>
+                        <option value="172.72">5' 8" / 173 cm</option>
+                        <option value="175.26" selected="selected">5' 9" / 175 cm</option>
+                        <option value="177.8">5' 10" / 178 cm</option>
+                        <option value="180.34">5' 11" / 180 cm</option>
+                        <option value="182.88">6' 0" / 183 cm</option>
+                        <option value="185.42">6' 1" / 185 cm</option>
+                        <option value="187.96">6' 2" / 188 cm</option>
+                        <option value="190.5">6' 3" / 191 cm</option>
+                        <option value="193.04">6' 4" / 193 cm</option>
+                        <option value="195.58">6' 5" / 196 cm</option>
+                        <option value="198.12">6' 6" / 198 cm</option>
+                        <option value="200.66">6' 7" / 201 cm</option>
+                        <option value="203.2">6' 8" / 203 cm</option>
+                        <option value="205.74">6' 9" / 206 cm</option>
+                        <option value="208.28">6' 10" / 208 cm</option>
+                        <option value="210.82">6' 11" / 211 cm</option>
+                    </select></div>
+            </div>
+            <div class="form-group"><label class="control-label col-xs-3 col-sm-offset-2">Gender</label>
+                <div class="col-xs-6 col-sm-3"><select name="gender" class="calc form-control">
+                        <option value="m">Male</option>
+                        <option value="f">Female</option>
+                    </select></div>
+            </div>
+            <div class="form-group"><label class="control-label col-xs-3 col-sm-offset-2">Weight</label>
+                <div class="col-xs-9 col-sm-4">
+                    <div class="row">
+                        <div class="col-xs-6"><input type="number" name="weight" placeholder="145"
+                                class="calc form-control"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group"><label class="control-label col-xs-3 col-sm-offset-2">Exercise</label>
+                <div class="col-xs-9 col-sm-4"><select name="exercise" class="calc form-control">
+                        <option value="1">(Basal Metabolic Rate)</option>
+                        <option value="1.2" selected="selected">Rarely</option>
+                        <option value="1.375">3 times per week</option>
+                        <option value="1.4187">4 times per week</option>
+                        <option value="1.4625">5 times per week</option>
+                        <option value="1.6375">Every day</option>
+                    </select></div>
+            </div>
+            <div class="form-group"><label class="control-label col-xs-3 col-sm-offset-2">Diet</label>
+                <div class="col-xs-9 col-sm-4"><select name="fatloss" class="calc form-control">
+                        <option value="1">Maintain my weight</option>
+                        <option value="0.85">Lose weight steadily</option>
+                        <option value="0.75">Lose weight quickly</option>
+                        <option value="1.15">Gain weight steadily</option>
+                        <option value="1.25">Gain weight quickly</option>
+                    </select></div>
+            </div>
+            <div class="form-group"><label
+                    style="border-top: 1px solid #ddd; padding-top: 15px; font-size: 1.4em; font-weight: normal"
+                    class="control-label col-xs-3 col-sm-offset-2">Results</label>
+                <div style="border-top: 1px solid #ddd; padding-top: 15px" class="col-xs-9 col-sm-4">
+                    <div style="display: none;" class="input-group custom-calories-results"><input id="cal-custom"
+                            type="text" class="form-control"><span class="input-group-addon">Calories per day</span>
+                    </div>
+                    <div style="font-size: 1.4em;" class="calories-results"><span id="cal">1,893</span> Calories per day
+                    </div>
+                </div>
+                <div style="display: none;" class="form-group custom-ratios"><label
+                        class="control-label col-xs-3 col-sm-offset-2"></label>
+                    <div class="col-xs-9 col-sm-4">
+                        <div class="row">
+                            <div class="col-xs-4"><input type="text" value="50"
+                                    class="form-control custom-carb text-center"></div>
+                            <div class="col-xs-4"><input type="text" value="25"
+                                    class="form-control custom-protein text-center"></div>
+                            <div class="col-xs-4"><input type="text" value="25"
+                                    class="form-control custom-fat text-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12 col-sm-4 col-sm-offset-5">
+                        <table style="width: 100%; margin-bottom: 10px;">
+                            <tr>
+                                <td class="text-center"><span id="carb_cal"></span></td>
+                                <td class="text-center"><span id="protein_cal"></span></td>
+                                <td class="text-center"><span id="fat_cal"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"><span id="carb_g"></span></td>
+                                <td class="text-center"><span id="protein_g"></span></td>
+                                <td class="text-center"><span id="fat_g"></span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="form-group">
+                </div>
+        </form>
+    </div>
+    </div>
+    </div>
+    <div style="margin-top: 50px" class="l">
+        <div class="l1"></div>
+        <div class="l2"></div>
+        <div class="l3"></div>
+    </div>
+</body>
+
+</html>

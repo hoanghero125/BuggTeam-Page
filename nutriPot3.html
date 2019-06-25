@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NutriPot</title>
+    <link rel="stylesheet" href="nutriPot.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="nav">
+        <div id="logo">
+            <a href="https://www.google.com.vn/?gws_rd=ssl"><img src="logo.jpg" alt=""></a>
+        </div>
+        <div id="bot">
+            <a href="https://www.google.com.vn/?gws_rd=ssl">About us</a>
+            <a href="nutriPot.html">Sign out</a>
+        </div>
+    </div>
+    <div id="page2">
+            <div class="container">
+                <h1 class="text-center">Your information</h1>
+                <form method="POST" action="/diy/nutrient-profiles/customize">
+                    <div>
+                    <span class="form-group">
+                        <label>Gender</label>
+                    </span>
+                    <span class="col-xs-6 col-sm-3"><select name="gender" id="gender" class="calc form-control">
+                            <option value="m">Male</option>
+                            <option value="f">Female</option>
+                        </select></span>
+                    </div>
+                    <div class="form-group"><label>Age</label>
+                        <span class="col-xs-6 col-sm-3"><input id="age" type="number" name="age" placeholder="24" min="0" max="120"
+                                class="form-control calc"></span>
+                    </div>
+                    <div class="form-group"><label>Height</label>
+                        <span><select id="height" name="height">
+                                <option value="121.92">122 cm</option>
+                                <option value="124.46">124 cm</option>
+                                <option value="127">127 cm</option>
+                                <option value="129.54">130 cm</option>
+                                <option value="132.08">132 cm</option>
+                                <option value="134.62">135 cm</option>
+                                <option value="137.16">137 cm</option>
+                                <option value="139.7">140 cm</option>
+                                <option value="142.24">142 cm</option>
+                                <option value="144.78">145 cm</option>
+                                <option value="147.32">147 cm</option>
+                                <option value="149.86">150 cm</option>
+                                <option value="152.4">152 cm</option>
+                                <option value="154.94">155 cm</option>
+                                <option value="157.48">157 cm</option>
+                                <option value="160.02">160 cm</option>
+                                <option value="162.56">163 cm</option>
+                                <option value="165.1">165 cm</option>
+                                <option value="167.64">168 cm</option>
+                                <option value="170.18">170 cm</option>
+                                <option value="172.72">173 cm</option>
+                                <option value="175.26" selected="selected">175 cm</option>
+                                <option value="177.8">178 cm</option>
+                                <option value="180.34">180 cm</option>
+                                <option value="182.88">183 cm</option>
+                                <option value="185.42">185 cm</option>
+                                <option value="187.96">188 cm</option>
+                                <option value="190.5">191 cm</option>
+                                <option value="193.04">193 cm</option>
+                                <option value="195.58">196 cm</option>
+                                <option value="198.12">198 cm</option>
+                                <option value="200.66">201 cm</option>
+                                <option value="203.2">203 cm</option>
+                                <option value="205.74">206 cm</option>
+                                <option value="208.28">208 cm</option>
+                                <option value="210.82">211 cm</option>
+                            </select></span>
+                    </div>
+                    <div>
+                            <label>Weight (kg)</label>
+                            <span class="row">
+                                <span><input id="weight" type="number" name="weight" placeholder="70"
+                                        class="calc form-control"></span>
+                                </span>
+                    </div>
+                    <div><label>Exercise</label>
+                        <span><select id="exLevel" name="exercise" class="calc form-control">
+                                <option value="1">(Basal Metabolic Rate)</option>
+                                <option value="1.2" selected="selected">Rarely</option>
+                                <option value="1.375">3 times per week</option>
+                                <option value="1.4187">4 times per week</option>
+                                <option value="1.4625">5 times per week</option>
+                                <option value="1.6375">Every day</option>
+                            </select></span>
+                    </div>
+                    <div class="form-group"><label>Diet</label>
+                        <span><select id="purpose" name="fatloss" class="calc form-control">
+                                <option value="1">Maintain my weight</option>
+                                <option value="0.85">Lose weight steadily</option>
+                                <option value="0.75">Lose weight quickly</option>
+                                <option value="1.15">Gain weight steadily</option>
+                                <option value="1.25">Gain weight quickly</option>
+                            </select></span>
+                    </div>
+                    <div class="form-group"><label>Results</label>
+                        <span class="calories-results">
+                            <span id="cal">1764</span>
+                            <span class="input-group-addon">Calories per day</span>
+                        </span>
+                        </div>
+                        <div class="form-group">
+                    </div>
+                    <a href="" id="getSuggest" onclick="">Get suggest</a>
+                </form>
+            </div>
+            </div>
+            </div>
+    </div>
+</body>
+    <script src="nutriPot.js"></script>
+</html>
